@@ -2,6 +2,7 @@
 
 const factory = require("./factory");
 const formatter = require('./formatter');
+const printer = require('./printer');
 const acmeData = [];
 
 
@@ -29,17 +30,22 @@ let promiseArray = [
   factory.getProducts(),
   factory.getTypes()
 ];
-
+let formattedData;
 Promise.all(promiseArray)
 .then(function(dataArray){
   console.log("promiseArray: ",promiseArray);
-  formatter.formatData(dataArray);
+  formattedData = formatter.formatData(dataArray);
+  console.log('formattedData: ', formattedData);
+  
 })
 .catch(function(error){
   console.log(error);
 }); // end of getCategories function
 
-
+$('#selection').on('change', function(){
+  
+  printer.printProducts(formattedData);
+});
 
 
 
