@@ -1,0 +1,46 @@
+{
+  "products": [
+      {
+        "fairy_sparklers": {
+          "id": 0,
+          "type": 0,
+          "name": "Fairy Sparklers",
+          "description": "Multi-colored sparklers that are safe for any age."
+        }
+      },
+      {
+        "fairy_killers": {
+          "id": 0,
+          "type": 0,
+          "name": "Fairy Sparklers",
+          "description": "Multi-colored sparklers that are safe for any age."
+        }
+      },
+      {
+        "the_shredder": {
+          "id": 1,
+          "type": 1,
+          "name": "The Shredder",
+          "description": "Duke Nukem's Favorite Greeting."
+        }
+      },
+      {
+        "cyclops": {
+          "id": 3,
+          "type": 3,
+          "name": "Cyclops",
+          "description": "You'll shoot your eye out."
+        }
+      },
+      {
+        "Roman_Candle": {
+          "id": 4,
+          "type": 1,
+          "name": "Roman Candle",
+          "description": "Et tu? Brutal!"
+        }
+      }
+  ]
+}
+
+
