@@ -26,7 +26,8 @@ TO THIS:
   }
 },
 */
-
+// MY ARRAYS DO NOT MATCH THE SAME ORDER AS JOES
+// MY PRODUCTS ARE IN data[1] INSTEAD OF data[2] LIKE HIS
   let revisedProds = data[1].map(function(prod){
     for(let prop in prod){
       prod[prop].category = "new thing";
