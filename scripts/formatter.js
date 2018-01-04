@@ -29,10 +29,18 @@ TO THIS:
 // MY ARRAYS DO NOT MATCH THE SAME ORDER AS JOES
 // MY PRODUCTS ARE IN data[1] INSTEAD OF data[2] LIKE HIS
   let revisedProds = data[1].map(function(prod){
+    
     for(let prop in prod){
-      prod[prop].category = "new thing";
-      prod[prop].type = "blowy up thing";
-
+      // prod[prop].category = "new thing";
+      // prod[prop].type = "blowy up thing";
+      for(let i = 0; i < data[2].length; i++){
+        if(prod[prop].type === data[2][i].id){
+          prod[prop].type = data[2][i].name;
+        }
+      }
+      for(let k = 0; k < data[0].length; k++){
+        // if(prod[prop])
+      }
     }
     return prod;
 
