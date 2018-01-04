@@ -36,7 +36,7 @@ Promise.all(promiseArray)
   formatter.formatData(dataArray);
 })
 .catch(function(error){
-  console.log(error.status, error.statusText);
+  console.log(error);
 }); // end of getCategories function
 
 
