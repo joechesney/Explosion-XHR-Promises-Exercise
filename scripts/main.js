@@ -1,7 +1,7 @@
 "use strict";
 
 const factory = require("./factory");
-
+const formatter = require('./formatter');
 const acmeData = [];
 
 
@@ -19,9 +19,6 @@ const acmeData = [];
 //   acmeData.push(products);  
 //   console.log("acmeData",acmeData);
 // })
-
-
-
 // .catch(function(error){
 //   console.log(error.status, error.statusText);
 // }); // end of getCategories function
@@ -36,6 +33,7 @@ let promiseArray = [
 Promise.all(promiseArray)
 .then(function(dataArray){
   console.log("promiseArray: ",promiseArray);
+  formatter.formatData(dataArray);
 })
 .catch(function(error){
   console.log(error.status, error.statusText);
