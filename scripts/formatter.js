@@ -44,5 +44,6 @@ TO THIS:
     return prod;
   });
  console.log("revise prods: ", revisedProds);
+ return revisedProds;
 };
 

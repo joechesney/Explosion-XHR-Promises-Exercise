@@ -5,7 +5,8 @@
           "id": 0,
           "type": 0,
           "name": "Fairy Sparklers",
-          "description": "Multi-colored sparklers that are safe for any age."
+          "description": "Multi-colored sparklers that are safe for any age.",
+          "price": "99&cent;"
         }
       },
       {
@@ -13,7 +14,8 @@
           "id": 1,
           "type": 1,
           "name": "The Shredder",
-          "description": "Duke Nukem's Favorite Greeting."
+          "description": "Duke Nukem's Favorite Greeting.",
+          "price": "$99.99"
         }
       },
       {
@@ -21,7 +23,8 @@
           "id": 2,
           "type": 3,
           "name": "Cyclops",
-          "description": "You'll shoot your eye out."
+          "description": "You'll shoot your eye out.",
+          "price": "$77.99"
         }
       },
       {
@@ -29,7 +32,8 @@
           "id": 3,
           "type": 0,
           "name": "Roman Candle",
-          "description": "Et tu? Brutal!"
+          "description": "Et tu? Brutal!",
+          "price": "$9.99"
         }
       }
   ]

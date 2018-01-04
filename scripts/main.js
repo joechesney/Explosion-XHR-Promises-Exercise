@@ -2,6 +2,7 @@
 
 const factory = require("./factory");
 const formatter = require('./formatter');
+const printer = require('./printer');
 const acmeData = [];
 
 
@@ -33,7 +34,9 @@ let promiseArray = [
 Promise.all(promiseArray)
 .then(function(dataArray){
   console.log("promiseArray: ",promiseArray);
-  formatter.formatData(dataArray);
+  let formattedData = formatter.formatData(dataArray);
+  console.log('formattedData: ', formattedData);
+  printer.printProducts(formattedData);
 })
 .catch(function(error){
   console.log(error);
