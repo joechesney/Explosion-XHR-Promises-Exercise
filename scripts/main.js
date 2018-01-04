@@ -30,19 +30,22 @@ let promiseArray = [
   factory.getProducts(),
   factory.getTypes()
 ];
-
+let formattedData;
 Promise.all(promiseArray)
 .then(function(dataArray){
   console.log("promiseArray: ",promiseArray);
-  let formattedData = formatter.formatData(dataArray);
+  formattedData = formatter.formatData(dataArray);
   console.log('formattedData: ', formattedData);
-  printer.printProducts(formattedData);
+  
 })
 .catch(function(error){
   console.log(error);
 }); // end of getCategories function
 
-
+$('#selection').on('change', function(){
+  
+  printer.printProducts(formattedData);
+});
 
 
 

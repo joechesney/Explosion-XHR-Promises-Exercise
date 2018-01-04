@@ -35,6 +35,33 @@
           "description": "Et tu? Brutal!",
           "price": "$9.99"
         }
+      },
+      {
+        "dynamite": {
+          "id": 4,
+          "type": 3,
+          "name": "Dynamite",
+          "description": "Building remover.",
+          "price": "$50,000"
+        }
+      },
+      {
+        "RPG": {
+          "id": 5,
+          "type": 2,
+          "name": "RPG",
+          "description": "This is literally not a firework.",
+          "price": "$200,000"
+        }
+      },
+      {
+        "Fire-Shmerks": {
+          "id": 5,
+          "type": 2,
+          "name": "Fire-Shmerks",
+          "description": "This one tokes the cake.",
+          "price": "$20/g"
+        }
       }
   ]
 }
